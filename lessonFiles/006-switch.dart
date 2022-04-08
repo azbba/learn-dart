@@ -3,7 +3,7 @@ void main(List<String> args) {
    * Switch statement:
    * Switch case statement is simplified form of the Nested if else statement.
    * it helps to avoid long chain of if..else if..else statements.
-   * Exp And Syntax bellow
+   * Exp And Syntax on below example
   */
   String userRole = "administrator";
   switch (userRole) {
