@@ -22,5 +22,20 @@ void main(List<String> args) {
    * Exp:
    * String name = "AzBba";
    * int age = 30;
+   * ====================
+   * Dynamic variables:
+   * This is a special variable initialised with keyword [ dynamic ] or [ var ] 
+   * [ var ]      => can't change type of variable, can change value with the same data type of initialisation
+   * [ dynamic ]  => can change type of variable, can change value with other datatype
+   * See Example below to more information:
   */
+  var firstName = "AzBba";
+  // firstName = 20;  // ERROR => Cannot change the data type to another data type after you initialise the variable in the first time
+  print(firstName.runtimeType); // String
+
+  dynamic lastName = "Azzedine";
+  print(lastName.runtimeType); // String
+  lastName =
+      30; // You can change the data type to another type when you using [ dynamic ] keyword
+  print(lastName.runtimeType); // int
 }
